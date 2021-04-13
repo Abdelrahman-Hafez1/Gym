@@ -28,6 +28,7 @@
 
 body {
   overflow-x: hidden;
+
 }
 
 .scroll-nav {
@@ -135,6 +136,7 @@ nav .burger-slide, nav .burger-slide::after, nav .burger-slide::before {
   display: block;
   width: 30px;
   height: 3px;
+  right: 30px;
   position: relative;
   background-color: #000;
 }
@@ -143,12 +145,14 @@ nav .burger-slide::after {
   content: "";
   position: absolute;
   top: 8px;
+  left: 0;
 }
 
 nav .burger-slide::before {
   content: "";
   position: absolute;
   top: -8px;
+  left: 0;
 }
 
 header {
@@ -260,7 +264,7 @@ header .header-content .watch-video:hover {
   position: relative;
 }
 
-.about .pic-container::after {
+/* .about .pic-container::after {
   content: "";
   position: absolute;
   border: 15px solid #dd3333;
@@ -271,7 +275,7 @@ header .header-content .watch-video:hover {
   top: 50%;
   right: -14px;
   z-index: 10;
-}
+} */
 
 .about .pic-container img {
   max-width: 100%;
@@ -934,6 +938,7 @@ header .header-content .watch-video:hover {
   margin: 50px auto;
   height: 2px;
   background-color: #d1d1d1;
+  box-sizing: border-box;
 }
 
 .news .owl-theme .owl-nav button {
